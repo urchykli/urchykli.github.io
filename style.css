@@ -1,0 +1,84 @@
+body {
+    background: black;
+    align-items: center;
+    margin: 50px auto;
+}
+.child {
+    display: block;
+    align-items: center;
+}
+img {
+    width: 350px;
+    height: 200px;  
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+.about {
+    text-align: center;
+}
+.resume {
+    text-align: center;
+}
+.email {
+    text-align: center;
+}
+.github {
+    text-align: center;
+}
+a {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #D6C8B2;
+    text-align: center;
+    margin: auto;
+}
+p {
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: .7px;
+    font-weight: bold;
+    color: #FFF8DC;
+    text-align: center;
+    margin: 300px auto;
+}
+.parent {
+    align-items: center;
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.murphy {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+}
+.alaska {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+.about {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+.greece {
+    grid-row: 3 / span 1;
+    grid-column: 3  / span 1;
+}
+.triangle {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+.email {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+/* .green {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+} */
+.pink {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
