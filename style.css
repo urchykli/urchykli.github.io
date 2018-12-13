@@ -31,7 +31,6 @@ a {
     font-size: 17px;
     text-decoration: none;
     letter-spacing: 2px;
-    font-weight: bold;
     color: #D6C8B2;
     text-align: center;
     margin: auto;
@@ -82,3 +81,9 @@ p {
     grid-row: 2 / span 1;
     grid-column: 2 / span 1;
 }
+.middle {
+    height: 375px;
+}
+a:hover {
+    font-weight: bold;
+} 
