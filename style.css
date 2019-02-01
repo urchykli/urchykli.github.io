@@ -56,9 +56,10 @@ p {
     grid-column: 2 / span 1;
     text-align: center;
 }
-.greece {
+.petit {
     grid-row: 3 / span 1;
     grid-column: 3  / span 1;
+    text-align: center;
 }
 .triangle {
     grid-row: 3 / span 1;
