@@ -2,6 +2,7 @@ body {
     background: black;
     align-items: center;
     margin: 50px auto;
+    color: #D6C8B2;
 }
 .child {
     display: block;
@@ -25,17 +26,25 @@ a {
     font-size: 17px;
     text-decoration: none;
     letter-spacing: 2px;
-    color: #D6C8B2;
     text-align: center;
     margin: auto;
+}
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    letter-spacing: .7px;
+    font-weight: bold;
+    /* color: #FFF8DC; */
+    text-align: center;
+    margin: 50px auto;
 }
 p {
     font-family: 'Julius Sans One', sans-serif;
     letter-spacing: .7px;
     font-weight: bold;
-    color: #FFF8DC;
+    /* color: #FFF8DC; */
     text-align: center;
-    margin: 300px auto;
+    margin: 0 auto;
+    padding: 30px;
 }
 .parent {
     align-items: center;
@@ -47,10 +56,6 @@ p {
     grid-row: 2 / span 1;
     grid-column: 3 / span 1;
     text-align: center;
-}
-.alaska {
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
 }
 .about {
     grid-row: 1 / span 1;
@@ -87,3 +92,13 @@ p {
 a:hover {
     font-weight: bold;
 } 
+.homePage {
+    display: block;
+    text-align: center
+}
+a:visited {
+    color: #D6C8B2;
+}
+.email:visited {
+    color: aquamarine;
+}
