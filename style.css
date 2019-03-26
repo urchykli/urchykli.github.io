@@ -7,6 +7,7 @@ body {
 .child {
     display: block;
     align-items: center;
+    margin: 0 auto;
 }
 img {
     width: 350px;
@@ -53,32 +54,58 @@ p {
     display: grid;
     grid-template-rows: 200px 200px 200px;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
 }
 .brewery {
     grid-row: 2 / span 1;
     grid-column: 3 / span 1;
     text-align: center;
 }
+.brewery a, .brewery img {
+    display: none;
+}
 .brewery:hover {
-    background: url("./brewery_finder.jpg") no-repeat;
     width: 350px;
     height: 200px;
-    cursor: pointer;
+    margin: auto;
+}
+.brewery:hover img, .brewery:hover a {
+    display: block;
+}
+.brewery:hover p {
+    display: none;
 }
 .about {
     grid-row: 1 / span 1;
     grid-column: 2 / span 1;
     text-align: center;
 }
+.aboutLink {
+    font-family: 'Tangerine', cursive;
+    letter-spacing: 1px;
+    font-size: 45px;
+    overflow: visible;
+    display: inline-block;
+    height: 65px;
+}
 .hangman {
     grid-row: 3 / span 1;
     grid-column: 1 / span 1;
     text-align: center;
 }
-.email {
-    grid-row: 3 / span 1;
-    grid-column: 2 / span 1;
-    text-align: center;
+.hangman a, .hangman img {
+    display: none;
+}
+.hangman:hover {
+    width: 350px;
+    height: 200px;
+    margin: auto;
+}
+.hangman:hover img, .hangman:hover a {
+    display: block;
+}
+.hangman:hover p {
+    display: none;
 }
 .email {
     grid-row: 3 / span 1;
@@ -90,10 +117,38 @@ p {
     grid-column: 3  / span 1;
     text-align: center;
 }
+.petit a, .petit img {
+    display: none;
+}
+.petit:hover {
+    width: 350px;
+    height: 200px;
+    margin: auto;
+}
+.petit:hover img, .petit:hover a {
+    display: block;
+}
+.petit:hover p {
+    display: none;
+}
 .park {
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
     text-align: center;
+}
+.park a, .park img {
+    display: none;
+}
+.park:hover {
+    width: 350px;
+    height: 200px;
+    margin: auto;
+}
+.park:hover img, .park:hover a {
+    display: block;
+}
+.park:hover p {
+    display: none;
 }
 .pink {
     grid-row: 2 / span 1;
@@ -111,10 +166,4 @@ a:hover {
 }
 a:visited {
     color: #D6C8B2;
-}
-.title {
-    font-family: 'Tangerine', cursive;
-    margin-bottom: 0;
-    letter-spacing: 4px;
-    font-size: 70px;
 }
