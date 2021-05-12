@@ -1,169 +1,137 @@
 body {
-    background: black;
-    align-items: center;
-    margin: 50px auto;
-    color: #D6C8B2;
-}
-.child {
-    display: block;
-    align-items: center;
-    margin: 0 auto;
+  background: black;
+  align-items: center;
+  margin: 50px auto;
+  color: #d6c8b2;
 }
 img {
-    width: 350px;
-    height: 200px;  
-    object-fit: contain;
-    display: block;
-    margin: auto;
+  width: 350px;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
 }
-.resume {
-    text-align: center;
-}
-.github {
-    text-align: center;
+a,
+p {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: #d6c8b2;
+  cursor: pointer;
 }
 a {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 17px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-align: center;
-    margin: auto;
-    color: #D6C8B2;
-    cursor: pointer;
-}
-h1 {
-    font-family: 'Julius Sans One', sans-serif;
-    letter-spacing: .7px;
-    font-weight: bold;
-    /* color: #FFF8DC; */
-    text-align: center;
-    margin: 50px auto;
+  text-decoration: none;
+  margin: auto;
 }
 p {
-    font-family: 'Julius Sans One', sans-serif;
-    letter-spacing: .7px;
-    font-weight: bold;
-    /* color: #FFF8DC; */
-    text-align: center;
-    margin: 0 auto;
-    padding: 30px;
+  margin: 0 auto;
+  padding: 30px;
 }
 .parent {
-    align-items: center;
-    display: grid;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 auto;
+  align-items: center;
+  display: grid;
+  grid-template-areas:
+    "resume about github"
+    "park pink brewery"
+    "timeline linkedin petit";
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+}
+.child {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.project:hover {
+  width: 350px;
+  height: 200px;
+  margin: auto;
+}
+.project a,
+.project img {
+  /* visibility: hidden;
+  opacity: 0; */
+  /* display: block; */
+  display: none;
+  transition: all 0.3s ease;
+}
+.project img {
+  position: absolute;
+  top: 0;
+  height: 0;
+}
+.project:hover img {
+  height: 200px;
+}
+.project-links {
+  position: relative;
+  bottom: -200px;
+  display: flex;
+  justify-content: space-between;
+}
+.project:hover img,
+.project:hover a {
+  /* visibility: visible;
+  opacity: 1; */
+  display: block;
+}
+.project:hover p {
+  display: none;
 }
 .brewery {
-    grid-row: 2 / span 1;
-    grid-column: 3 / span 1;
-    text-align: center;
-}
-.brewery a, .brewery img {
-    display: none;
-}
-.brewery:hover {
-    width: 350px;
-    height: 200px;
-    margin: auto;
-}
-.brewery:hover img, .brewery:hover a {
-    display: block;
-}
-.brewery:hover p {
-    display: none;
+  grid-area: brewery;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 .about {
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
-    text-align: center;
+  grid-area: about;
+  text-align: center;
 }
 .aboutLink {
-    font-family: 'Tangerine', cursive;
-    letter-spacing: 1px;
-    font-size: 45px;
-    overflow: visible;
-    display: inline-block;
-    height: 65px;
+  font-family: "Tangerine", cursive;
+  letter-spacing: 1px;
+  font-size: 45px;
+  overflow: visible;
+  display: inline-block;
+  height: 65px;
 }
-.hangman {
-    grid-row: 3 / span 1;
-    grid-column: 1 / span 1;
-    text-align: center;
+.timeline {
+  grid-area: timeline;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
 }
-.hangman a, .hangman img {
-    display: none;
-}
-.hangman:hover {
-    width: 350px;
-    height: 200px;
-    margin: auto;
-}
-.hangman:hover img, .hangman:hover a {
-    display: block;
-}
-.hangman:hover p {
-    display: none;
-}
-.email {
-    grid-row: 3 / span 1;
-    grid-column: 2 / span 1;
-    text-align: center;
+.linkedin {
+  grid-area: linkedin;
+  text-align: center;
 }
 .petit {
-    grid-row: 3 / span 1;
-    grid-column: 3  / span 1;
-    text-align: center;
-}
-.petit a, .petit img {
-    display: none;
-}
-.petit:hover {
-    width: 350px;
-    height: 200px;
-    margin: auto;
-}
-.petit:hover img, .petit:hover a {
-    display: block;
-}
-.petit:hover p {
-    display: none;
+  grid-area: petit;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 .park {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 1;
-    text-align: center;
-}
-.park a, .park img {
-    display: none;
-}
-.park:hover {
-    width: 350px;
-    height: 200px;
-    margin: auto;
-}
-.park:hover img, .park:hover a {
-    display: block;
-}
-.park:hover p {
-    display: none;
+  grid-area: park;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 .pink {
-    grid-row: 2 / span 1;
-    grid-column: 2 / span 1;
+  grid-area: pink;
+}
+.resume {
+  grid-area: resume;
 }
 .middle {
-    height: 375px;
+  height: 375px;
 }
 a:hover {
-    font-weight: bold;
-} 
+  font-weight: bold;
+}
 .homePage {
-    display: block;
-    text-align: center
+  display: block;
+  text-align: center;
 }
 a:visited {
-    color: #D6C8B2;
+  color: #d6c8b2;
 }
